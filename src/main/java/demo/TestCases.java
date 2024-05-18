@@ -135,7 +135,7 @@ public class TestCases {
 
     public void testCase04() throws InterruptedException {
         System.out.println("Start Test case: testCase04");
-        //driver.get("https://calendar.google.com/");
+        driver.get("https://calendar.google.com/");
         Thread.sleep(10000);
 
         //Click on the existing task
@@ -156,9 +156,9 @@ public class TestCases {
         System.out.println(message);
         boolean result = message.equalsIgnoreCase("Task deleted");
         if(result){
-            System.out.println("Task deleted message - Not verified");
-        }else
             System.out.println("Task deleted message - verified");
+        }else
+            System.out.println("Task deleted message - Not verified");
         System.out.println("end Test case: testCase04");
     }
     }
